@@ -5,6 +5,8 @@ package Cards;
  *
  * @author David Winter
  */
+
+// TODO: Does NOT violate ISP. All inherited methods are used.
 public class DealerCardHand extends CardHand
 {
     /**
@@ -26,6 +28,7 @@ public class DealerCardHand extends CardHand
     public boolean add(Card card)
     {
         boolean cardAdded = false;
+        // TODO Violation
         
         if (!isBust() && !hasBlackjack())
         {            

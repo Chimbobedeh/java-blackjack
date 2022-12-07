@@ -211,6 +211,30 @@ public class AppWindow extends JFrame
         }
     }
 
+    // TODO: Here we violate the ISP
+
+    /*
+    AppWindow is here forced to implement interfaces it does not use, violating the Interface Segregation Principle.
+    Instead, the ComponentListener should be split up into more specific interfaces each defining a smaller scope of functionality. This way, 
+    AppWindow can implement only the interfaces that it needs, rather than being forced into implementing methods it does not use.
+
+    To handle this problem, one can create an abstract class that implements the `ComponentListener` and defines all methods empty.
+    A more feature-specific interface can be defined by extending the `ComponentAdapter` (Which is part of the java.awt.event package) and then only
+    defining the method(s) of interest.
+    ```java
+        public interface ComponentListener {
+            public void componentResized(ComponentEvent e);
+            public void componentMoved(ComponentEvent e);
+            public void componentShown(ComponentEvent e);
+            public void componentHidden(ComponentEvent e);
+        }
+
+        public interface MyComponentListener extends ComponentListener {
+            public void componentResized(ComponentEvent e);
+        }
+
+    ```
+    */
     public void componentMoved(ComponentEvent e) {
     }
 
