@@ -5,6 +5,8 @@ import java.io.*;
 import Cards.*;
 
 //TODO: This is a model
+// TODO: Does NOT violate ISP
+
 /**
  * Class that represents a normal Blackjack player.
  *
@@ -66,6 +68,10 @@ public class Player extends BlackjackPlayer implements Serializable {
      *
      * @return Whether or not the bet was valid.
      */
+
+     //Does too much, doesn't follow SRP
+     // This Should be in 
+     
     public boolean setBet(double bet) {
         boolean betMade = false;
 

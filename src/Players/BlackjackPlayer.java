@@ -1,6 +1,8 @@
 package Players;
 
 import java.io.*;
+//TODO: Does not violate SRP
+// Doesn not violate OCP
 
 /**
  * Class that represents a general Blackjack player. Including the Dealer.

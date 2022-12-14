@@ -103,7 +103,7 @@ public class GameTable extends JPanel {
         int i = CARD_START;
         // TODO:Too many things happening at once, should just be about the cards and
         // what's on the table not actually drawing and incrementing cards.
-        // Thus this breaks the Single responsibily principle.
+        // Thus this breaks the Single Responsibily Principle.
         if (showAllDealerCards) {
             for (Card aCard : dealer) {
                 g.drawImage(cardImages[aCard.getCode() - 1], i, DEALER_POSITION, this);

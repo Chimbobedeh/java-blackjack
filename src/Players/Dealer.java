@@ -2,6 +2,9 @@ package Players;
 
 import Cards.*;
 
+//TODO: Does way too much, thus it doesn't follow SRP
+// TODO: Does NOT violate ISP
+
 /**
  * Class representing the Dealer of a Blackjack game.
  * Dealer must stand on 17 or over and can only accept an Ace as 11.
