@@ -2,8 +2,7 @@ package Cards;
 
 /**
  * Class to represent a card Suit.
- *
- * @author David Winter
+
  */
 public class Suit
 {
